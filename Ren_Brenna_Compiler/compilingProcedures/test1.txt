@@ -1,0 +1,11 @@
+// Test for block comments and mod
+
+BEGIN
+    x := 2;
+    y := x + 1; 
+    (* x := x + y; *)
+    WRITELN(x mod y);
+
+    WRITELN(3);
+END;
+.

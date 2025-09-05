@@ -1,0 +1,25 @@
+// Environment hierarchy test file
+
+PROCEDURE foo(y);
+BEGIN
+    x:=2;
+    y:=7;
+    ignore:=bar();
+    WRITELN(y);
+END;
+
+PROCEDURE bar();
+BEGIN
+    x:=3;
+    y:=y+2;
+END;
+
+BEGIN
+    x:=1;
+    ignore:=foo();
+    WRITELN(x);
+    WRITELN(y);
+END;
+
+//should output 9 then 3 then 0
+

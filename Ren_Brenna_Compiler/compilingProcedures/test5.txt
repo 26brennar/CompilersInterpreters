@@ -1,0 +1,13 @@
+PROCEDURE bar(f);
+WRITELN(f);
+
+PROCEDURE foo(d);
+ignore := bar(d + f);
+
+
+BEGIN
+    f := 2;
+    ignore := foo(3);
+    WRITELN(f);
+END;
+.

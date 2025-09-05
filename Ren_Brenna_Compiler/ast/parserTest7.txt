@@ -1,0 +1,12 @@
+sum := 0;
+READLN(end);
+FOR i := 1 TO end DO
+BEGIN
+    sum := sum + i;
+    WRITELN(sum);
+END;
+
+IF sum > 55 THEN
+WRITELN(sum);
+ELSE
+WRITELN(-1);
